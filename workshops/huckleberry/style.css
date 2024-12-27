@@ -1,12 +1,67 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100svh;
+  box-sizing: border-box;
 }
 
 /* Add styles here! */
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-gold-light: hsl(45deg, 100%, 50%);
+  --color-gold-dark: hsl(45deg, 100%, 40%);
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-very-dark: hsl(0deg, 0%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
+p strong {
+  color: var(--color-primary);
+}
+
+header {
+  border-bottom: 8px solid var(--color-light);
+  /* height: 50%; */
+}
+
+main {
+  background-color: var(--color-medium);
+  padding: 64px 0;
+  height: 50%;
+}
+
+.max-width-wrapper {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-chunk {
+  max-width: 415px;
+  padding: 0 16px;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+.card {
+  background-color: white;
+  padding: 16px;
+}
+
+.indented-heading {
+  width: fit-content;
+  margin-top: 0;
+  margin-left: -24px;
+  background: var(--color-gold-light);
+  border-bottom: 8px solid var(--color-gold-dark);
+  padding: 24px;
+}
